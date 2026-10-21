@@ -15,8 +15,12 @@ int main(void)
     int a = 0b00000011;
     int b = 0b00000110;
 
-    int c = 0;   /* ここを書き換える */
+    int c = a ^ b;
 
     printf("%d\n", c);
+
+    c = b ^ c;
+    printf("%d\n", c);
+
     return 0;
 }
